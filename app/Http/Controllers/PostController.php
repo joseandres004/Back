@@ -18,7 +18,7 @@ class PostController extends Controller
             'message' => $request->message
         ]);
 
-        Mail::to('jose@evolutivadigital.com')->send(new NewMessage($post));        
+        Mail::to('jose_andres04@yahoo.es')->send(new NewMessage($post));        
         return response()->json(['status'=>'-----Mensaje enviado correctamente!!!-----','response'=>200,'detail'=>$post]);
     }
 
